@@ -3,16 +3,14 @@ Body{
     color:white;
     font-family:"Lato", sans-serif;
     font-size: 1rem;
-    a:link{
-        color:white;
         
-    }
+    
 }
 
 main {
     margin: 0 100px;
+    
 }
-
 
 .wrapper{
     position: relative;
@@ -25,6 +23,7 @@ main {
 .img-solar {
     border-radius:50px;
     /* width:90%; */
+    
 }
 
 
@@ -89,8 +88,25 @@ main {
     }
 }
 a{
-    text-decoration: none;   
+    text-decoration: none;  
+    color:white;
+    font-weight: bold;
+    border-radius: 10px; 
+    padding:5px;
 }
+/* Unvisited links */
+a:link{
+background-color:skyblue;
+} 
+/* visited links */
+a:visited{
+    background-color:red;
+}
+/* link hovered */
+a:hover{
+    background:lightblue;
+}
+
 ul{
     list-style-type: none;
     padding-right: 260px;
@@ -98,18 +114,17 @@ ul{
 }
 li{
     display: inline-block;
-    padding-left:px;
+    padding-left:40x;
 }
 li a{
     font-size:18px;
     font-weight:bold;
     margin-right: 25px;
 }
-button{
-    background-color: lightblue; border-radius:20px; padding:2px; margin-left:10x; width:100px;
-}
+
+
 a:hover{
-    background-color: aquamarine; border-radius:20px;padding:2px;
+    /* background-color: aquamarine; border-radius:20px;padding:2px; */
 }
 button:hover{
     background-color:aquamarine;border-radius:20px;padding:2px; margin-left:10px;
@@ -131,32 +146,38 @@ button:hover{
     align-items: center;
 }
 
-.planet p{
-    /* display:grid; */
-    /* grid-row:2; */
-    /* margin-left:230%; */
-    /* display: */
-    
-    
-   
-}
-.planet a {
-    /* display:grid;
-    grid-row:3;
-   margin-left:225%; */
-}
-.planet img {
-    /* margin-left: 200%; */
 
-}
+
 footer{
     
     padding:5% 40%;
     
 }
-a:link{
-    color:blue;
-}
 
+  /*media queries  */
+@media screen and (min-width: 400px)and (max-width: 950px){
     
+    .h1{
+        display:flex;
+    flex-direction: column; 
+    align-items: center;
+    width:100%;
+    }
+    
+     .box-container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+     }
+      
+}
+@media screen (max-width: 740px){
+    .h1{
+     
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 0%;
+    }
 
+   
+}
