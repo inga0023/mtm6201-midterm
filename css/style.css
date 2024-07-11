@@ -9,19 +9,22 @@ Body{
     }
 }
 
-
+main {
+    margin: 0 100px;
+}
 
 
 .wrapper{
     position: relative;
-    overflow: hidden; 
-    padding-left: 200px;
-    padding-right: 50px;
+    overflow: hidden;
+    
+    /* padding-left: 200px;
+    padding-right: 50px; */
 
 }
 .img-solar {
     border-radius:50px;
-    width:90%;
+    /* width:90%; */
 }
 
 
@@ -32,20 +35,26 @@ Body{
     top:0;
     left:0;
     right:0;
-    /* z-index: 5;
+    z-index: 5;
     display:flex;
     flex-direction: column; 
-    /* text-align: center; */
-    padding-left:20%;
-    padding-top: 30%;
+    justify-content: end;
+    padding:0 50px 100px;
     font-weight:bold;
 
+}
+.colorshift{
+    background: -webkit-linear-gradient(0deg, blue,rgb(113, 213, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    background-position: 0% 50%;
 }
 .tour-text{
     padding-top: 30px;
 }
-.highlight::after{
-    content: " ";
+    .highlight::after{
+    /content: " ";
     position: absolute;
     background: lightskyblue;
     width:100px;
@@ -53,17 +62,31 @@ Body{
     display:inline-block;
     right:0;
     bottom: 10px;
-    z-index:-1;
+    z-index:-1;*/
+    } 
 
-}
 .highlight{
-    position:relative;
+    position:relative;*/
 }
 .h1{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 14%;
+    .highlight::after{
+        content:" ";
+        position:absolute;
+        background:lightskyblue;
+        width:100px;
+        height:15px;
+        display:inline-block;
+        right:0;
+        bottom:10px;
+        z-index:-1;
+    }
+    highlight{
+        position:relative;
+    }
 }
 a{
     text-decoration: none;   
@@ -92,31 +115,48 @@ button:hover{
     background-color:aquamarine;border-radius:20px;padding:2px; margin-left:10px;
 }
   h2{
-    padding-left:12%;
     padding-top: 2%;
   }
 .box-container{
     display:grid;
-    grid-template-columns: repeat(6,2fr 2fr 2fr);
+    grid-template-columns: repeat(6,1fr);
     /* padding:15px 12%;
     padding-bottom: 100px; */
 
 }
-main p{
-    display:grid;
-    grid-row:2;
-    margin-left:230%;
-    display:
+
+.planet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet p{
+    /* display:grid; */
+    /* grid-row:2; */
+    /* margin-left:230%; */
+    /* display: */
     
     
    
 }
-.box1{
-    display:grid;
+.planet a {
+    /* display:grid;
     grid-row:3;
+   margin-left:225%; */
 }
-.box{
-    margin-left: 200%;
+.planet img {
+    /* margin-left: 200%; */
+
+}
+footer{
+    
+    padding:5% 40%;
+    
+}
+a:link{
+    color:blue;
 }
 
- 
+    
+
