@@ -53,7 +53,7 @@ main {
     padding-top: 30px;
 }
     .highlight::after{
-    /content: " ";
+    content: " ";
     position: absolute;
     background: lightskyblue;
     width:100px;
@@ -61,11 +61,11 @@ main {
     display:inline-block;
     right:0;
     bottom: 10px;
-    z-index:-1;*/
+    z-index:-1;
     } 
 
 .highlight{
-    position:relative;*/
+    position:relative;
 }
 .h1{
     display:flex;
@@ -100,11 +100,11 @@ background-color:skyblue;
 } 
 /* visited links */
 a:visited{
-    background-color:red;
+    background-color:purple;
 }
 /* link hovered */
 a:hover{
-    background:lightblue;
+    background:skyblue;
 }
 
 ul{
@@ -173,7 +173,7 @@ footer{
      }
       
 }
-@media screen (max-width: 740px){
+@media screen and (max-width: 740px){
     .h1{
      
       display:flex;
