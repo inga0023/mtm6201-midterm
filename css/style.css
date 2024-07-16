@@ -71,13 +71,13 @@ main {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 14%;
+    /* padding-left: 14%; */
     .highlight::after{
         content:" ";
         position:absolute;
         background:lightskyblue;
         width:100px;
-        height:15px;
+        /* height:15px; */
         display:inline-block;
         right:0;
         bottom:10px;
@@ -87,6 +87,16 @@ main {
         position:relative;
     }
 }
+nav ul li :hover {
+background: skyblue;
+}
+ nav ul li:nth-child(3) {
+    background:lightskyblue;
+    border-radius: 20px;
+    
+ }
+    
+    
 a{
     text-decoration: none;  
     color:white;
@@ -94,16 +104,18 @@ a{
     border-radius: 10px; 
     padding:5px;
 }
+
 /* Unvisited links */
-a:link{
+main a:link{
 background-color:skyblue;
 } 
 /* visited links */
-a:visited{
+ main a:visited{
+
     background-color:purple;
 }
 /* link hovered */
-a:hover{
+main a:hover{
     background:skyblue;
 }
 
@@ -123,17 +135,18 @@ li a{
     font-size:18px;
     font-weight:bold;
     margin-right: 25px;
+    
 }
 
 
 a:hover{
     /* background-color: aquamarine; border-radius:20px;padding:2px; */
 }
-button:hover{
-    background-color:aquamarine;border-radius:20px;padding:2px; margin-left:10px;
-}
+/* button:hover{
+    background:skyblue} */
+   
   h2{
-    padding-top: 2%;
+    /* padding-top: 2%; */
   }
 .box-container{
     display:grid;
@@ -179,7 +192,7 @@ footer{
       display:flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-left: 0%;
+      /* padding-left: 0%; */
     }
 
    
